@@ -1,0 +1,26 @@
+{
+  "name": "postcss_paraktees",
+  "version": "1.0.0",
+  "description": "Learning PostCSS and others like gulp etc.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "keywords": [
+    "PostCSS",
+    "Gulp"
+  ],
+  "author": "Anil Maharjan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "precss": "^1.3.0"
+  }
+}
