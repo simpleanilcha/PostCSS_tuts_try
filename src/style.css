@@ -22,3 +22,53 @@
 		background:blue;
 	}
 }
+
+/* Testing autoprefixer */
+
+@keyframes animationExample{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+.animateThis{
+	animation:animationExample 2s;
+	display: flex;
+}
+
+/* Testing postcss-will-change */
+.thisWillChange{
+	will-change: transform;
+}
+
+/* Testing postcss-color-rgba-fallback */
+.rgbaFallback{
+	background:rgba(0,0,0,0.5);
+}
+
+/* Testing postcss-opacity */
+.opacityFallback{
+	opacity: 0.5;
+}
+
+/* Testing postcss-pseudoelements */
+.pseudo-elements::before{
+	content: "";
+}
+
+/* Testing postcss-vmin */
+.vmFallback{
+	width:50vmin;
+}
+
+/* Testing pixrem */
+.remFallback{
+	height: 10rem;
+	font: 2rem Arial;
+}
+.remFallback:before{
+	content: "";
+	line-height: 1rem;
+}

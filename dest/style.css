@@ -13,10 +13,82 @@
 
 /* Testing cssnext */
 .cssnext{
+	background:#FF0000;
 	background: rgba(255, 0, 0, 0.9);
 }
 
 /* Testing precss */
 .precss{
 	background:green
+}
+
+/* Testing autoprefixer */
+
+@-webkit-keyframes animationExample{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+@keyframes animationExample{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+.animateThis{
+	-webkit-animation:animationExample 2s;
+	        animation:animationExample 2s;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* Testing postcss-will-change */
+.thisWillChange{
+	-webkit-backface-visibility:hidden;
+	        backface-visibility:hidden;
+	will-change: transform;
+}
+
+/* Testing postcss-color-rgba-fallback */
+.rgbaFallback{
+	background:#000000;
+	background:rgba(0,0,0,0.5);
+}
+
+/* Testing postcss-opacity */
+.opacityFallback{
+	opacity: 0.5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+/* Testing postcss-pseudoelements */
+.pseudo-elements:before{
+	content: "";
+}
+
+/* Testing postcss-vmin */
+.vmFallback{
+	width:50vm;
+	width:50vmin;
+}
+
+/* Testing pixrem */
+.remFallback{
+	height:160px;
+	height: 10rem;
+	font:32px Arial;
+	font: 2rem Arial;
+}
+.remFallback:before{
+	content: "";
+	line-height:16px;
+	line-height: 1rem;
 }
